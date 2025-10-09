@@ -252,7 +252,7 @@ const filteredProjects = computed(() => {
 
 // Meta
 useHead({
-  title: 'ikhwan | projects',
+  title: 'projects',
   meta: [
     {
       name: "description", content: 'Explore the portfolio of Ikhwan Satrio – Frontend Developer. Showcasing web apps, open-source tools, and more built with Astro, Svelte, Tauri, and modern web tech.',

@@ -5,7 +5,7 @@ const { data: blogs } = await useAsyncData(() => {
 })
 
 useHead({
-  title: "ikhwan | blogs",
+  title: "blogs",
   meta: [
     { name: "description", content: "Read blogs by Ikhwan Satria on programming, anime, and dev tools like NeoVim, Nuxt, and more." },
     { name: 'keywords', content: ["blog of ikhwan satrio", "ikhwan satrio blog", "main blog ikhwan satrio"] },

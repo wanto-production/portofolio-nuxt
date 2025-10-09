@@ -4,7 +4,7 @@ import profileImage from '~/assets/images/nishimiya.jpeg'
 import { hyperspeedPresets } from '~/components/bits/Backgrounds/Hyperspeed/HyperspeedPresets'
 
 useHead({
-  title: 'ikhwan | home',
+  title: 'home',
   meta: [
     { name: "description", content: 'Personal portfolio of Ikhwan Satrio - Frontend Developer' }
   ]
@@ -19,7 +19,7 @@ useHead({
       <!-- Background Rays -->
       <div class="absolute top-0 w-full h-full z-10">
         <ClientOnly>
-          <BitsBackgroundsHyperspeed :effect-options="hyperspeedPresets.one" />
+          <BitsBackgroundsHyperspeed :effect-options="hyperspeedPresets.two" />
         </ClientOnly>
       </div>
 

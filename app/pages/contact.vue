@@ -317,6 +317,8 @@ const { enhance, data } = await useFormAction({
     if (Object.keys(result).length === 0) { // Vorms returns an empty object if the form is valid.
       await submitForm() // Submit the form if valid ...
       isSubmitting.value = false
+    } else {
+      isSubmitting.value = false
     }
   }
 })
@@ -328,7 +330,7 @@ const { value: message, attrs: messageAtt } = register('message')
 
 // Meta
 useHead({
-  title: 'ikhwan | contact',
+  title: 'contact',
   meta: [
     {
       name: "description", content: 'Get in touch with Ikhwan Satrio - Frontend Developer. Contact me for web development projects, collaborations, or just to say hello. Available for freelance work and exciting opportunities.',

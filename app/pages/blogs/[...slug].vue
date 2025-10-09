@@ -6,7 +6,7 @@ const { data: blog } = await useAsyncData('page-' + route.path, () => {
 })
 
 useHead({
-  title: `ikhwan | ${blog?.value?.path.replaceAll("/blogs/", "")}`,
+  title: blog?.value?.path.replaceAll("/blogs/", ""),
   meta: [
     { name: "description", content: blog.value?.description },
     { name: "keywords", content: [`post ${blog.value?.title}`, "blog ikhwan satrio", `blog ${blog.value?.title}`] }

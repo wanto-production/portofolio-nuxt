@@ -6,7 +6,7 @@ const activeTab = ref('story')
 
 // SEO Meta Tags
 useHead({
-  title: 'ikhwan | about',
+  title: 'about',
   meta: [
     {
       name: 'description',
@@ -253,12 +253,31 @@ const tabs = ['story', 'skills', 'journey', 'interests']
               Current Focus
             </h3>
             <p class="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              I'm currently diving deep into performance optimization with Qwik and exploring
+              I'm currently diving deep into performance optimization with Nuxt and exploring
               the intersection of AI and web development. Always excited about pushing the
               boundaries of what's possible on the web! 🚀
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Fun fact section --->
+    <section class="w-full min-h-screen h-fit p-6 bg-background flex items-center text-foreground">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold mb-6 text-secondary-foreground">
+          🎉 Fun Facts About Me
+        </h2>
+        <ul class="text-lg space-y-4">
+          <li>👨‍💻 A young programmer with big ambition</li>
+          <li>
+            🎬 Huge fan of anime (especially slice-of-life and romance genres)
+          </li>
+          <li>💪 Loves doing calisthenics every morning</li>
+          <li>
+            🧩 Enjoys exploring new frameworks while listening to anime lo-fi
+          </li>
+        </ul>
       </div>
     </section>
 
