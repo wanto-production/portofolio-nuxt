@@ -32,6 +32,9 @@ export default defineNuxtConfig({
       type: "libsql",
       url: process.env.TURSO_DATABASE_URL!,
       authToken: process.env.TURSO_AUTH_TOKEN!,
+    },
+    experimental: {
+      sqliteConnector: "native",
     }
   }
 })
