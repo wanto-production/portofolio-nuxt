@@ -14,4 +14,5 @@ useHead({
   <Header />
   <NuxtPage />
   <Footer />
+  <RespectTooltip />
 </template>
