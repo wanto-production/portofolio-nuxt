@@ -13,7 +13,9 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
     '@hebilicious/form-actions-nuxt',
-    'nuxt-resend'
+    '@vueuse/motion/nuxt',
+    'nuxt-resend',
+    '@nuxtjs/sitemap',
   ],
   future: {
     compatibilityVersion: 4,

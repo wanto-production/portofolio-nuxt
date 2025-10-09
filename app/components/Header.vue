@@ -2,15 +2,13 @@
 import icon from "~/assets/images/favicon.png"
 
 const isOpen = ref(false)
-
-// Close menu when route changes
 const route = useRoute()
+const menuRef = ref<HTMLElement | null>(null)
+
 watch(() => route.path, () => {
   isOpen.value = false
 })
 
-// Close menu when clicking outside
-const menuRef = ref<HTMLElement | null>(null)
 onMounted(() => {
   const handleClickOutside = (event: MouseEvent) => {
     if (menuRef.value && !menuRef.value.contains(event.target as Node)) {
@@ -55,6 +53,10 @@ onMounted(() => {
           active-class="text-foreground font-semibold">
           Contact
         </NuxtLink>
+        <NuxtLink to="/blogs" class="hover:text-foreground transition-colors"
+          active-class="text-foreground font-semibold">
+          Blogs
+        </NuxtLink>
       </nav>
 
       <!-- Actions (Desktop) -->
@@ -77,7 +79,6 @@ onMounted(() => {
         </UiButton>
       </div>
     </div>
-
     <!-- Mobile Nav (Dropdown) -->
     <Transition enter-active-class="transition-all duration-300 ease-out"
       enter-from-class="opacity-0 scale-95 -translate-y-2" enter-to-class="opacity-100 scale-100 translate-y-0"
@@ -105,6 +106,11 @@ onMounted(() => {
           class="text-muted-foreground hover:text-foreground font-medium transition-colors w-full text-center py-2"
           active-class="text-foreground font-semibold">
           Contact
+        </NuxtLink>
+        <NuxtLink to="/blogs"
+          class="text-muted-foreground hover:text-foreground font-medium transition-colors w-full text-center py-2"
+          active-class="text-foreground font-semibold">
+          Blogs
         </NuxtLink>
         <a href="https://github.com/wanto-production" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2 rounded-xl bg-gradient-to-r 
                  from-blue-600 to-purple-600 text-white font-medium 
