@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hebilicious/form-actions-nuxt": "^0.3.0",
+    "@libsql/client": "^0.15.15",
     "@nuxt/content": "^3.7.1",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "2.0.0",
@@ -20,7 +21,6 @@
     "@vorms/core": "^1.1.0",
     "@vorms/resolvers": "^1.1.0",
     "@vueuse/motion": "^3.0.3",
-    "better-sqlite3": "^12.4.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",

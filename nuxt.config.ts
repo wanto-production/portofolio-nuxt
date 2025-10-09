@@ -27,4 +27,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()]
   },
+  content: {
+    database: {
+      type: "libsql",
+      url: process.env.TURSO_DATABASE_URL!,
+      authToken: process.env.TURSO_AUTH_TOKEN!,
+    }
+  }
 })
