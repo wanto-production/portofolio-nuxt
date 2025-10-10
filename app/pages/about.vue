@@ -262,6 +262,9 @@ const tabs = ['story', 'skills', 'journey', 'interests']
       </div>
     </section>
 
+    <!-- Music -->
+    <FavoriteMusicSection />
+
     <!-- Fun fact section --->
     <section class="w-full min-h-screen h-fit p-6 bg-background flex items-center text-foreground">
       <div class="max-w-4xl mx-auto text-center px-4">
