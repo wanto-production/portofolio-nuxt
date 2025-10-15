@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@hebilicious/form-actions-nuxt',
     '@vueuse/motion/nuxt',
     'nuxt-resend',
+    '@nuxtjs/sitemap'
   ],
   future: {
     compatibilityVersion: 4,
