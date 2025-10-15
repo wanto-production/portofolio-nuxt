@@ -28,7 +28,7 @@ const musicTracks = ref([
 ])
 
 const qrTrack = ref<typeof musicTracks.value[0] | null>(null)
-const qrCanvas = ref<HTMLCanvasElement | null>(null)
+const qrCanvas = useTemplateRef('qrCanvas')
 
 async function showQR(track: typeof musicTracks.value[0]) {
   qrTrack.value = track

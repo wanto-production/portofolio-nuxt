@@ -16,7 +16,6 @@
     "@nuxt/icon": "2.0.0",
     "@nuxt/image": "1.11.0",
     "@nuxtjs/color-mode": "3.5.2",
-    "@nuxtjs/sitemap": "7.4.7",
     "@tailwindcss/vite": "^4.1.14",
     "@vorms/core": "^1.1.0",
     "@vorms/resolvers": "^1.1.0",
