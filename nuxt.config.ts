@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
-    '@hebilicious/form-actions-nuxt',
     '@vueuse/motion/nuxt',
     'nuxt-resend',
     '@nuxtjs/sitemap'
