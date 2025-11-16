@@ -234,8 +234,8 @@ const projects = [
     title: 'Telegram TikTok Bot',
     description: 'Telegram bot that downloads TikTok videos without watermark',
     category: 'opensource',
-    technologies: ['TypeScript', 'Bun', 'WebHook'],
-    githubUrl: 'https://github.com/wanto-production/next_webhook',
+    technologies: ['TypeScript', 'Deno', 'WebHook'],
+    githubUrl: 'https://github.com/wanto-production/deno_telegrambot',
     status: 'completed',
   },
 ]
