@@ -1,38 +1,52 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 
 const { data: blog } = await useAsyncData('page-' + route.path, () => {
-  return queryCollection('blogs').path(route.path).first()
-})
+  return queryCollection('blogs').path(route.path).first();
+});
 
 useHead({
-  title: blog?.value?.path.replaceAll("/blogs/", ""),
+  title: blog?.value?.path.replaceAll('/blogs/', ''),
   meta: [
-    { name: "description", content: blog.value?.description },
-    { name: "keywords", content: [`post ${blog.value?.title}`, "blog ikhwan satrio", `blog ${blog.value?.title}`] }
-  ]
-})
+    { name: 'description', content: blog.value?.description },
+    {
+      name: 'keywords',
+      content: [
+        `post ${blog.value?.title}`,
+        'blog ikhwan satrio',
+        `blog ${blog.value?.title}`,
+      ],
+    },
+  ],
+});
 
 if (!blog.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true,
+  });
 }
 </script>
 
 <template>
-
-  <main class="w-full min-h-screen bg-background text-foreground px-4 pb-10 pt-[100px]">
+  <main
+    class="w-full min-h-screen bg-background text-foreground px-4 pb-10 pt-[100px]"
+  >
     <!-- Container Utama -->
     <div class="max-w-6xl mx-auto space-y-16">
-
       <!-- Artikel dan Gambar -->
       <article class="flex flex-col lg:flex-row gap-10">
-        <NuxtLink href="/blogs" class=" font-poppins font-bold text-lg">
+        <NuxtLink href="/blogs" class="font-poppins font-bold text-lg">
           <Icon name="fa:arrow-left" /> back
         </NuxtLink>
         <!-- Gambar utama -->
-        <div v-if="blog?.thumbnail" class="flex-shrink-0 w-full lg:w-1/3">
-          <NuxtImg :src="blog.thumbnail" :alt="blog.title"
-            class="aspect-[16/9] w-full object-cover rounded-lg shadow-md" />
+        <div v-if="blog?.thumbnail" class="shrink-0 w-full lg:w-1/3">
+          <NuxtImg
+            :src="blog.thumbnail"
+            :alt="blog.title"
+            class="aspect-video w-full object-cover rounded-lg shadow-md"
+          />
         </div>
 
         <!-- Konten blog -->

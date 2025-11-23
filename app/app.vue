@@ -1,12 +1,16 @@
 <script setup lang="ts">
 useHead({
   titleTemplate(title) {
-    return `ikhwan | ${title}`
+    return `ikhwan | ${title}`;
   },
   meta: [
-    { name: "keywords", content: 'portofolio,portofolio ikhwan,portofolio ikhwan satrio,ikhwan,ikhwan satrio,young dev portofolio' }
-  ]
-})
+    {
+      name: 'keywords',
+      content:
+        'portofolio,portofolio ikhwan,portofolio ikhwan satrio,ikhwan,ikhwan satrio,young dev portofolio',
+    },
+  ],
+});
 </script>
 
 <template>

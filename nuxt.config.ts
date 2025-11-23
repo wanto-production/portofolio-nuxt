@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vueuse/motion/nuxt',
     'nuxt-resend',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/eslint'
   ],
   future: {
     compatibilityVersion: 4,
